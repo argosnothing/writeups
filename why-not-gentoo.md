@@ -44,6 +44,10 @@ In the same vein, a nix-config takes on the form of a software project, as oppos
 
 I'm also a tinkerer, and i love to play around with different software, specifically window managers. This doesn't mean I want them all installed at once, or even their configs in my user space, without needing stow **or** contorting myself to xdg_config conventions I can only have window manager config ( or any configured package ) in my home directory that I am currently using or testing, all while **actually** conforming to those conventions in the instantiated config. 
 
+Following image is a example of my nix file structure. 
+<img width="328" height="1213" alt="image" src="https://github.com/user-attachments/assets/3c29190c-2f9b-4506-904e-d6072820ec99" />
+
+
 With NixOS I feel like I can make it any system I want at any moment, because I have architected it in such a way that it makes sense to me. It lets me create my own abstractions that I can then apply to various configs. Case in point: 
 
 ```nix
@@ -92,7 +96,7 @@ Here I am populating a set of options that I myself created, for a particular ho
 All of this is fairly technical, and it all requires a lot of architecting and work. I **Love** nix, I love writing it, I love being able to have 4 machines that I can keep up to date at the same time. 
 
 
-The list will go on for at least 5 more reasons, there is increased integrity with built in closure rollbacks, there is the obvious boon of atomic updates, there is the flexibility in that I could use flags and not rely on the nix cache at all if I wanted, there is the easy interop between other peoples configs and their outputs. I can take an aspect of the config through only the output and directly use it as I showed earlier. My config has already doubled as a way to instantly get my nvim on other machines when I just want my shit. 
+The list will go on for at least 5 more reasons, there is increased integrity with built in closure rollbacks, there is the obvious boon of atomic updates, there is the flexibility in that I could use flags and not rely on the nix cache at all if I wanted, there is the easy interop between other peoples configs and their outputs, oh yeah transient nix shells are god; I can just test software that I don't even have installed like magic. I can take an aspect of the config through only the output and directly use it as I showed earlier. My config has already doubled as a way to instantly get my nvim on other machines when I just want my shit. 
 
 
 Honestly, and because you entered the nix channel asking why *over gentoo*, of all things, I have to turn it back to you, why in the world should you care? Like do you have a small computer with not a lot of memory? Why obsess over compiler flags for different features, it makes your system more tailored to the use case ( after a ton of work ), but then you end up losing all that time just having to compile things anyway. It's like buying expensive solar panels because it will save you money in the long term, but the calculus rarely pans out that way; all the time spent not being able to use your computer you could have put into learning some skill that makes you better. NixOS also suffers from a massive amount of investment to actually really make it your own, but then the end product is a perfectly preserved config that you will always have, just as you left it. 
