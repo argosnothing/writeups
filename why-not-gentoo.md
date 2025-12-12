@@ -86,7 +86,7 @@ With NixOS I feel like I can make it any system I want at any moment, because I 
 
 ```
 
-Here I am populating a set of options that I myself created, for a particular host that has two displays. Each window manager config I have created then maps this information into their own configuration in whatever format they need. I don't need to concern myself with how they do it, all I need to do is tell my config that this host is the one with these details. I could even make this more ergonomic, and have nix actually compute positions based the sizes and scale, as I've seen other nixers do. 
+Here I am populating a set of options that I myself created, for a particular host that has two displays. Each window manager config I have created then maps this information into their own configuration in whatever format they need. I don't need to concern myself with how they do it, all I need to do is tell my config that this host is the one with these details. I could even make this more ergonomic, and have nix actually compute positions based on the size and scale, as I've seen other nixers do. 
 
 
 All of this is fairly technical, and it all requires a lot of architecting and work. I **Love** nix, I love writing it, I love being able to have 4 machines that I can keep up to date at the same time. 
