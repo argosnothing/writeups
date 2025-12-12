@@ -44,7 +44,7 @@ In the same vein, a nix-config takes on the form of a software project, as oppos
 
 I'm also a tinkerer, and i love to play around with different software, specifically window managers. This doesn't mean I want them all installed at once, or even their configs in my user space, without needing stow **or** contorting myself to xdg_config conventions I can only have window manager config ( or any configured package ) in my home directory that I am currently using or testing, all while **actually** conforming to those conventions in the instantiated config. 
 
-Following image is a example of my nix file structure. 
+Following image is a example of my nix file structure.   
 <img width="328" height="1213" alt="image" src="https://github.com/user-attachments/assets/3c29190c-2f9b-4506-904e-d6072820ec99" />
 
 
