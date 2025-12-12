@@ -28,7 +28,7 @@ NixOS and Nix goes beyond even this though, it offers a truly unified linux oper
 
 In this one bit of nix code we're actually doing a few things, we are
 
-1. Creating a shell script that will be available in our $pactl
+1. Creating a shell script that will be available in our $PATH
 2. Creating a implementation for what the script does by interpolating bash
 3. On-the-fly including packages that might not even be on the system yet by resolving them to their store paths. ( based on the current nixpkgs version we have locked in our flake )
 
