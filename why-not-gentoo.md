@@ -28,9 +28,10 @@ NixOS and Nix goes beyond even this though, it offers a truly unified linux oper
 
 In this one bit of nix code we're actually doing a few things, we are
 
-1. Creating a shell script that will be available in our $PATH
-2. Creating a implementation for what the script does by interpolating bash
-3. On-the-fly including packages that might not even be on the system yet by resolving them to their store paths. ( based on the current nixpkgs version we have locked in our flake )
+1. Creating a derivation that we can add to `environment.systemPackages` with the following 
+2. Creating a shell script that will be available in our $PATH
+3. Creating a implementation for what the script does by interpolating bash
+4. On-the-fly including packages that might not even be on the system yet by resolving them to their store paths. ( based on the current nixpkgs version we have locked in our flake )
 
 This is binding the actual configuration for some program to those dependencies being installed. If i handed the snippet of code to someone else, as long as they had nixpkgs in their scope, when they rebuild with this it will just work. Configuration gets locked to packages, no more "you need xyz dependency". We ensure the dependencies exist in our dotfiles. It handles all of that. 
 
