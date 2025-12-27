@@ -7,7 +7,7 @@
 
 I'll answer the question with another question. Why "over gentoo?"? What do you think gentoo provides that makes it attractive to the kind of person that would choose NixOS? Gentoo gives you more flexibility in the kind of packages you can put together, which does indeed let you dodge dependency issues between a set of packages that might have issues elsewhere (with work and crosschecking versions). This is the closest I can get to gentoo helping with an issue NixOS addresses, but even then it doesn't actually fix the issue of dependencies on a system.  
 
-I think the answer to your question, not over gentoo, but over literally any non CAD style Operating system is in the [original thesis](https://edolstra.github.io/pubs/phd-thesis.pdf). If you're genuinely interested in why someone would run an entire system like this for your OS. It includes direct comparisons to popular package managers that portage is in the same category as. It also mentions portage.  
+I think the answer to your question, not over gentoo, but over literally any non CAS style Operating system is in the [original thesis](https://edolstra.github.io/pubs/phd-thesis.pdf). If you're genuinely interested in why someone would run an entire system like this for your OS. It includes direct comparisons to popular package managers that portage is in the same category as. It also mentions portage.  
 
 NixOS and Nix goes beyond even this though, it offers a truly unified linux operating system through allowing you to abstract over virtually any configuration file you want, and then tie the configuration to the package installation and it needing to be on the system itself. This is going to sound like mumbo jumbo to you so I'll give a concrete example: 
 
